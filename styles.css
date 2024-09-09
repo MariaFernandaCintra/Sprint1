@@ -4,48 +4,63 @@
     box-sizing: border-box; /*Inclui bordas e preenchimentos no calculo da largura e altura do elementos*/
   }
 
-  body{
-    background-image: url(imagem_de_fundo.jpg);
+  body{ /*Corpo*/
+    background-image: url(imagem_de_fundo.jpg); /*imagem de fundo*/
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     height: 100vh; /* Faz com que o elemento ocupe 100% da altura da viewport */
     color: white; /* Cor do texto, para contraste com a imagem */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
    
 }
 
-
-
-main{
+main{ /*Configurações da logo senai*/
     padding: 30px;
     text-align: center;
 }
 
-main img {
+main img { /*Configurações da logo senai*/
     max-width: 170px;
     top: 25%;
     position: absolute;
     left: 45%;
 }
 
-.retangulo {
-    width: 308px; /* Largura do retângulo */
-    height: 215px; /* Altura do retângulo */
-    background-color: #E00000; /* Cor de fundo do retângulo */
-    border-radius: 10px; /* Arredondar os cantos (opcional) */
+.retangulo { /*Retângulo base inical e login*/ 
+    width: 308px; 
+    height: 250px; 
+    background-color: #E00000; 
+    border-radius: 10px; 
     max-width: 250px;
     top: 35%;
     position: absolute;
     left: 42.5%;
 }
 
-.botao1 {
-    width: 238px; /* Largura do retângulo */
-    height: 46px; /* Altura do retângulo */
-    background-color: #EFEFEF; /* Cor de fundo do retângulo */
-    border-radius: 10px; /* Arredondar os cantos (opcional) */
+.retangulo4 { /*Retângulo base Cadastro*/ 
+    width: 308px; 
+    height: 335px; 
+    background-color: #E00000;
+    border-radius: 10px; 
     max-width: 250px;
-    top: 42%;
+    top: 35%;
+    position: absolute;
+    left: 42.5%;
+}
+
+.botao1 { /*redireciona para login*/
+    width: 238px; 
+    height: 46px;
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 41.5%;
     position: absolute;
     left: 42.8%;
     z-index: 1;
@@ -53,15 +68,142 @@ main img {
 }
 
 
-.botao2 {
-    width: 238px; /* Largura do retângulo */
-    height: 46px; /* Altura do retângulo */
-    background-color: #EFEFEF; /* Cor de fundo do retângulo */
-    border-radius: 10px; /* Arredondar os cantos (opcional) */
+.botao2 { /*redireciona para cadastro*/
+    width: 238px; 
+    height: 46px; 
+    background-color: #EFEFEF;
+    border-radius: 10px;
     max-width: 250px;
-    top: 50%;
+    top: 52%;
     position: absolute;
     left: 42.8%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.retangulo1{ /*Área email (login)*/
+    width: 238px; 
+    height: 46px; 
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 41.5%;
+    position: absolute;
+    left: 42.8%;
+    text-align: center;
+    padding: 13px;
+    color: #000000;
+    
+    
+}
+
+.retangulo2{ /*Área senha (login)*/
+    width: 238px; 
+    height: 46px; 
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 52%;
+    position: absolute;
+    left: 42.8%;
+    text-align: center;
+    padding: 13px;
+    color: #000000;
+}
+
+.retangulo5{ /*Área email (cadastro)*/
+    width: 238px;  
+    height: 46px; 
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 52%;
+    position: absolute;
+    left: 42.8%;
+    text-align: center;
+    padding: 13px;
+    color: #000000;
+    
+    
+}
+
+.retangulo6{ /*Área senha (cadastro)*/
+    width: 238px; 
+    height: 46px; 
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 62%;
+    position: absolute;
+    left: 42.8%;
+    text-align: center;
+    padding: 13px;
+    color: #000000;
+}
+
+.retangulo7{ /*Área nome completo (cadastro)*/
+    width: 238px; 
+    height: 46px;
+    background-color: #EFEFEF; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 41%;
+    position: absolute;
+    left: 42.8%;
+    text-align: center;
+    padding: 13px;
+    color: #000000;
+}
+
+
+.botao3 { /*redireciona para tela inicial (login)*/
+    width: 126px; 
+    height: 26px; 
+    background-color: #C0BABA; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 64.5%;
+    position: absolute;
+    left: 47%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.botao4{ /*redireciona para entrar no site (login)*/
+    width: 99px; 
+    height: 26px; 
+    background-color: #C0BABA; 
+    border-radius: 10px;
+    max-width: 250px;
+    top: 60%;
+    position: absolute;
+    left: 47.8%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.botao5 { /*redireciona para tela inicial (cadastro)*/
+    width: 126px; 
+    height: 26px; 
+    background-color: #C0BABA; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 76%;
+    position: absolute;
+    left: 47%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.botao6{ /*redireciona para entrar no site (cadastro)*/
+    width: 99px; 
+    height: 26px; 
+    background-color: #C0BABA; 
+    border-radius: 10px; 
+    max-width: 250px;
+    top: 71.2%;
+    position: absolute;
+    left: 47.8%;
     z-index: 1;
     cursor: pointer;
 }
