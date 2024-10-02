@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: #e00000;
-    padding: 30px;
+    padding: 27px;
     text-align: center;
     width: 100%;
     position: absolute;
@@ -56,20 +56,21 @@ main img {
 
 .retangulo4 {
   /*Retângulo base Cadastro*/
-  width: 308px;
-  height: 335px;
+  width: 330px;
+  height: 280px;
   background-color: #e00000;
   border-radius: 10px;
   max-width: 250px;
   top: 35%;
   position: absolute;
   left: 42.5%;
+  padding: 20px 3px 40px 100px;
 }
 
 .botao1 {
   /*redireciona para login*/
-  width: 238px;
-  height: 46px;
+  width: 230px;
+  height: 45px;
   background-color: #efefef;
   border-radius: 10px;
   max-width: 250px;
@@ -82,8 +83,8 @@ main img {
 
 .botao2 {
   /*redireciona para cadastro*/
-  width: 238px;
-  height: 46px;
+  width: 230px;
+  height: 45px;
   background-color: #efefef;
   border-radius: 10px;
   max-width: 250px;
@@ -96,14 +97,14 @@ main img {
 
 .retangulo1 {
   /*Área email (login)*/
-  width: 238px;
-  height: 46px;
+  width: 200px;
+  height: 45px;
   background-color: #efefef;
   border-radius: 10px;
   max-width: 250px;
   top: 41.5%;
   position: absolute;
-  left: 42.8%;
+  left: 44%;
   text-align: center;
   padding: 13px;
   color: #000000;
@@ -111,14 +112,14 @@ main img {
 
 .retangulo2 {
   /*Área senha (login)*/
-  width: 238px;
-  height: 46px;
+  width: 200px;
+  height: 45px;
   background-color: #efefef;
   border-radius: 10px;
   max-width: 250px;
   top: 52%;
   position: absolute;
-  left: 42.8%;
+  left: 44%;
   text-align: center;
   padding: 13px;
   color: #000000;
@@ -227,7 +228,7 @@ main img {
 
 footer {
     background-color: #e00000;/*cor de fundo*/
-    padding: 30px;
+    padding: 13px;
     position: absolute;
     text-align: center; /*alinha o texto no radapé da tela */
     bottom: 0;/*A linha do rodapé abaixo da página */
