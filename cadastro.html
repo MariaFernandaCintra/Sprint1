@@ -8,34 +8,51 @@
 </head>
 <body> 
     <header>
-        <p></p>
+
     </header>
     <main>
-        <section>
-            <img src="senaisplogo.png" alt="Logo senai-SP"/>
-        </section>
-        <!--Botão que redierciona a tela inicial-->
-        <section>
-            <button class="botao5" onclick="window.location.href='index.html'">Voltar a tela inicial</button>
-        </section>
-        <section>
-        <!--Botão que vai direcinar para a primeira pagina do site em si-->
-            <button class="botao6" on click="window.location.href='reservas.html'">Entrar
-        </section>
+        <div class="containerCadastro">
+            <section class="logoSenai">
+                <img src="senaisplogo.png" alt="Logo senai-SP"/>
+            </section>
+            <section>
+                <form id="formulario-cadastro">
+                  <!--Entrada nome-->
+                <div>
+                <label fro="nome"></label>
+                <input type="text" id="nome" placeholder="Nome Completo:" name="nome" required />
+                </div>
+        
+                  <!--Entrada email-->
+                <div>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail:" name="email" required />
+                </div>
+        
+                  <!--Entrada senha-->
+                  <div>
+                  <label for="senha"></label>
+                  <input type="password" id="senha" placeholder="Senha:" name="senha" required />
+                </div>
+        
+                  <!--Entrada confirmação senha-->
+                  <div>
+                  <label for="senha"></label>
+                  <input type="password" id="senha"  placeholder="Confirmação da senha:" name="senha" required />
+                </div>
+        
+                  <!--Botão para enviar o formulário-->
+                  <input type="submit" value="Cadrastrar"/>
+                </form>
+                <button class="botao5" onclick="window.location.href='index.html'">Voltar a tela inicial</button>
+            </section>
+    </div>
     </main>
+    
+
     <footer>
         <h5>Desenvolvido por: Maria Fernanda, Lívia, Rhuan</h5>
     </footer>
-    
-    <div class="retangulo4"></div> <!--Retangulo base-->
-    <div class="retangulo5"> <!--Área para colocar o email-->
-        <input type="text" placeholder="Email">
-    </div>
-    <div class="retangulo6">
-        <input type="password" placeholder="Senha">
-    </div>
-    <div class="retangulo7">
-        <input type="text" placeholder="Nome completo">
-    </div>
+
 </body>
 </html>

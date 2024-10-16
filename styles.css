@@ -29,63 +29,71 @@ header {
 }
 
 main {
-  /*Configurações da logo senai*/
-  padding: 30px;
+  padding: 70px;
   text-align: center;
+  display: flex;
+  background-color: #e00000;
+    position: absolute;
+  max-width: 170px;
+  top: 23%;
+  justify-content: center;
+
 }
 
 main img {
-  /*Configurações da logo senai*/
+  /* Configurações da logo senai login */
+  position: absolute;
   max-width: 170px;
-  top: 25%;
-  position: absolute;
-  left: 45%;
+  top: 23%;
+  justify-content: center;
 }
 
-.retangulo {
-  /*Retângulo base inical e login*/
-  width: 308px;
-  height: 250px;
-  background-color: #e00000;
-  border-radius: 10px;
-  max-width: 250px;
-  top: 35%;
+.logoSenai{ /*CADASTRO */
   position: absolute;
-  left: 42.5%;
+  max-width: 170px;
+  top: 23%;
+  justify-content: center;
+} 
+.telaInicial{
+flex: 1;
 }
 
-.retangulo4 {
-  /*Retângulo base Cadastro*/
-  width: 330px;
-  height: 280px;
+.containerCadastro {
   background-color: #e00000;
+  flex-direction: row;
   border-radius: 10px;
-  max-width: 250px;
-  top: 35%;
-  position: absolute;
-  left: 42.5%;
-  padding: 20px 3px 40px 100px;
+  flex: 1;
+}
+.formulario-cadastro{
+  justify-content: center;
+
+}
+
+.formulario-login{
+  justify-content: center;
 }
 
 .botao1 {
   /*redireciona para login*/
   width: 230px;
   height: 45px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
   top: 41.5%;
   position: absolute;
   left: 42.8%;
   z-index: 1;
-  cursor: pointer;
+  cursor: pointer; 
+  border: 0;
+
 }
 
 .botao2 {
   /*redireciona para cadastro*/
   width: 230px;
   height: 45px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
   top: 52%;
@@ -93,13 +101,15 @@ main img {
   left: 42.8%;
   z-index: 1;
   cursor: pointer;
+  border: 0;
+
 }
 
 .retangulo1 {
   /*Área email (login)*/
   width: 200px;
   height: 45px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
   top: 41.5%;
@@ -114,7 +124,7 @@ main img {
   /*Área senha (login)*/
   width: 200px;
   height: 45px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
   top: 52%;
@@ -125,49 +135,37 @@ main img {
   color: #000000;
 }
 
-.retangulo5 {
+.inputEmail {
   /*Área email (cadastro)*/
-  width: 238px;
-  height: 46px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
-  top: 52%;
-  position: absolute;
-  left: 42.8%;
   text-align: center;
-  padding: 13px;
+  padding: 10px;
   color: #000000;
+  margin-top: 2%;
 }
 
-.retangulo6 {
+.inputSenha {
   /*Área senha (cadastro)*/
-  width: 238px;
-  height: 46px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
-  top: 62%;
-  position: absolute;
-  left: 42.8%;
   text-align: center;
-  padding: 13px;
+  padding: 10px;
   color: #000000;
+  margin-top: 2%;
 }
 
-.retangulo7 {
+.inputNome {
   /*Área nome completo (cadastro)*/
-  width: 238px;
-  height: 46px;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   border-radius: 10px;
   max-width: 250px;
-  top: 41%;
-  position: absolute;
-  left: 42.8%;
   text-align: center;
-  padding: 13px;
+  padding: 10px;
   color: #000000;
+  margin-top: 2%;
 }
 
 .botao3 {
@@ -182,6 +180,7 @@ main img {
   left: 47%;
   z-index: 1;
   cursor: pointer;
+  border: 0;
 }
 
 .botao4 {
@@ -196,38 +195,39 @@ main img {
   left: 47.8%;
   z-index: 1;
   cursor: pointer;
+  border: 0;
+
 }
 
 .botao5 {
   /*redireciona para tela inicial (cadastro)*/
-  width: 126px;
-  height: 26px;
   background-color: #c0baba;
   border-radius: 10px;
   max-width: 250px;
-  top: 76%;
-  position: absolute;
-  left: 47%;
+  text-align: center;
+  padding: 10px;
   z-index: 1;
   cursor: pointer;
+  border: 0;
+  margin-top: 1%;
 }
 
 .botao6 {
   /*redireciona para entrar no site (cadastro)*/
-  width: 99px;
-  height: 26px;
   background-color: #c0baba;
   border-radius: 10px;
   max-width: 250px;
-  top: 71.2%;
-  position: absolute;
-  left: 47.8%;
+  text-align: center;
+  padding: 10px;
   z-index: 1;
   cursor: pointer;
+  border: 0;
+  margin-top: 1%;
 }
 
 footer {
     background-color: #e00000;/*cor de fundo*/
+    color: #5e5e5e;
     padding: 13px;
     position: absolute;
     text-align: center; /*alinha o texto no radapé da tela */
